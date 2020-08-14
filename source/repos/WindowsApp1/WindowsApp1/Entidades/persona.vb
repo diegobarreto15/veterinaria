@@ -1,17 +1,17 @@
 ﻿Public Class persona
     Private _nombre As String
     Private _ci As Integer
-    Private _telefono As Integer
+    Private _telefono As List(Of Integer)
     Private _direccion As String
 
     Public Sub persona()
 
     End Sub
 
-    Public Sub persona(nombre_ As String, ci_ As Integer, telefono_ As Integer, direccion_ As String)
+    Public Sub persona(nombre_ As String, ci_ As Integer, telefono_ As List(Of Integer), direccion_ As String)
         CedulaProp = ci_
         NombreProp = nombre_
-        TelefonoProp = telefono_
+        ListaTelefono = telefono_
         DireccionProp = direccion_
 
     End Sub
@@ -30,11 +30,11 @@
         End Set
     End Property
 
-    Public Property TelefonoProp As Integer
+    Public Property ListaTelefono As List(Of Integer)
         Get
             Return _telefono
         End Get
-        Set(value As Integer)
+        Set(value As List(Of Integer))
             _telefono = value
         End Set
     End Property
