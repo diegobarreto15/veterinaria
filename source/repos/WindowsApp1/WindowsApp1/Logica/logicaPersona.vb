@@ -10,4 +10,10 @@
         Return persistencia.buscarPersona(ci)
     End Function
 
+
+    Public Sub modificarPersona(personaNueva As persona)
+        Dim persistencia As New persistenciaPersona
+        persistencia.modificarPersona(personaNueva)
+    End Sub
+
 End Class

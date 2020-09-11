@@ -34,4 +34,25 @@
 
         tbxTel.Text = ""
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim newPersona As New persona
+        Dim ci As Integer
+        Dim nombrePersona As String
+        Dim Direccion As String
+
+
+        ci = tbxCedula.Text
+        nombrePersona = tbxName.Text
+        Direccion = tbxDireccion.Text
+
+        newPersona.CedulaProp = ci
+        newPersona.NombreProp = nombrepersona
+        newPersona.DireccionProp = Direccion
+        newPersona.ListaTelefono = listatelefonos
+
+        Dim logicaPersona As New logicaPersona
+        logicaPersona.modificarPersona(newPersona)
+
+    End Sub
 End Class

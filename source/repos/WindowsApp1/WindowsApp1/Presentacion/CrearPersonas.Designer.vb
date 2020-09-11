@@ -36,6 +36,7 @@ Partial Class CrearPersonas
         Me.lstvPersonas = New System.Windows.Forms.ListView()
         Me.btnAddTel = New System.Windows.Forms.Button()
         Me.btnCancelarPersona = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -143,6 +144,7 @@ Partial Class CrearPersonas
         Me.lstvPersonas.Size = New System.Drawing.Size(194, 183)
         Me.lstvPersonas.TabIndex = 11
         Me.lstvPersonas.UseCompatibleStateImageBehavior = False
+        Me.lstvPersonas.View = System.Windows.Forms.View.List
         '
         'btnAddTel
         '
@@ -162,11 +164,21 @@ Partial Class CrearPersonas
         Me.btnCancelarPersona.Text = "CANCELAR"
         Me.btnCancelarPersona.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(96, 293)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(105, 23)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "Modificar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'CrearPersonas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnCancelarPersona)
         Me.Controls.Add(Me.btnAddTel)
         Me.Controls.Add(Me.lstvPersonas)
@@ -202,4 +214,5 @@ Partial Class CrearPersonas
     Friend WithEvents lstvPersonas As ListView
     Friend WithEvents btnAddTel As Button
     Friend WithEvents btnCancelarPersona As Button
+    Friend WithEvents Button1 As Button
 End Class

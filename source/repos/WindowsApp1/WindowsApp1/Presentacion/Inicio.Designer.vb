@@ -29,6 +29,7 @@ Partial Class Inicio
         Me.AltaPersonaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltaMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarPersonasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -45,7 +46,7 @@ Partial Class Inicio
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearPersonasToolStripMenuItem, Me.MascotasToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearPersonasToolStripMenuItem, Me.ModificarPersonasToolStripMenuItem, Me.MascotasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
@@ -75,8 +76,14 @@ Partial Class Inicio
         'AltaMascotasToolStripMenuItem
         '
         Me.AltaMascotasToolStripMenuItem.Name = "AltaMascotasToolStripMenuItem"
-        Me.AltaMascotasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AltaMascotasToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
         Me.AltaMascotasToolStripMenuItem.Text = "Alta mascotas"
+        '
+        'ModificarPersonasToolStripMenuItem
+        '
+        Me.ModificarPersonasToolStripMenuItem.Name = "ModificarPersonasToolStripMenuItem"
+        Me.ModificarPersonasToolStripMenuItem.Size = New System.Drawing.Size(120, 20)
+        Me.ModificarPersonasToolStripMenuItem.Text = "Modificar Personas"
         '
         'Inicio
         '
@@ -103,4 +110,5 @@ Partial Class Inicio
     Friend WithEvents AltaPersonaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MascotasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AltaMascotasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ModificarPersonasToolStripMenuItem As ToolStripMenuItem
 End Class
