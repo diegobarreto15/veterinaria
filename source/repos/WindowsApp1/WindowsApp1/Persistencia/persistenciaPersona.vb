@@ -91,6 +91,31 @@
         End Try
     End Function
 
+    Public Sub listadoPersonas()
+        Try
+            Dim newPersona As New persona
+            Dim classConn As New conexionPostgre
+            Dim cadenaDeComandos As String
+
+            Dim reader As Npgsql.NpgsqlDataReader
+            conection = classConn.AbrirConexion()
+            Dim cmd As New Npgsql.NpgsqlCommand()
+
+            cmd.Connection = conection
+
+            cadenaDeComandos = "select * from personas"
+            cmd.CommandText = cadenaDeComandos
+            reader = cmd.ExecuteReader
+
+
+        Catch ex As Exception
+            Throw ex
+        Finally
+            conection.close
+        End Try
+
+    End Sub
+
     Public Sub modificarPersona(personaNueva As persona)
 
         Try
@@ -148,4 +173,8 @@
 
         End Try
     End Sub
+
+
+
+
 End Class

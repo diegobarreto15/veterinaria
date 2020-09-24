@@ -37,6 +37,7 @@ Partial Class CrearPersonas
         Me.btnAddTel = New System.Windows.Forms.Button()
         Me.btnCancelarPersona = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnBuscar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -129,11 +130,11 @@ Partial Class CrearPersonas
         'lblListPersonas
         '
         Me.lblListPersonas.AutoSize = True
-        Me.lblListPersonas.Location = New System.Drawing.Point(560, 73)
+        Me.lblListPersonas.Location = New System.Drawing.Point(560, 93)
         Me.lblListPersonas.Name = "lblListPersonas"
         Me.lblListPersonas.Size = New System.Drawing.Size(102, 13)
         Me.lblListPersonas.TabIndex = 10
-        Me.lblListPersonas.Text = "Listado de personas"
+        Me.lblListPersonas.Text = "Listado de telefonos"
         Me.lblListPersonas.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'lstvPersonas
@@ -141,7 +142,7 @@ Partial Class CrearPersonas
         Me.lstvPersonas.HideSelection = False
         Me.lstvPersonas.Location = New System.Drawing.Point(563, 109)
         Me.lstvPersonas.Name = "lstvPersonas"
-        Me.lstvPersonas.Size = New System.Drawing.Size(194, 183)
+        Me.lstvPersonas.Size = New System.Drawing.Size(99, 133)
         Me.lstvPersonas.TabIndex = 11
         Me.lstvPersonas.UseCompatibleStateImageBehavior = False
         Me.lstvPersonas.View = System.Windows.Forms.View.List
@@ -173,11 +174,21 @@ Partial Class CrearPersonas
         Me.Button1.Text = "Modificar"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'btnBuscar
+        '
+        Me.btnBuscar.Location = New System.Drawing.Point(563, 49)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(65, 26)
+        Me.btnBuscar.TabIndex = 15
+        Me.btnBuscar.Text = "Buscar"
+        Me.btnBuscar.UseVisualStyleBackColor = True
+        '
         'CrearPersonas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnCancelarPersona)
         Me.Controls.Add(Me.btnAddTel)
@@ -215,4 +226,5 @@ Partial Class CrearPersonas
     Friend WithEvents btnAddTel As Button
     Friend WithEvents btnCancelarPersona As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents btnBuscar As Button
 End Class

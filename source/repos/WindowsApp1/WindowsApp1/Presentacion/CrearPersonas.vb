@@ -22,7 +22,14 @@
         newPersona.ListaTelefono = listatelefonos
 
         Dim logicaPersona As New logicaPersona
-        logicaPersona.AltaPersona(newPersona)
+        logicaPersona.Altapersona(newPersona)
+
+        tbxCedula.Enabled = True
+        tbxCedula.Text = ""
+        tbxDireccion.Text = ""
+        tbxName.Text = ""
+        tbxTel.Text = ""
+
     End Sub
 
     Private Sub btnAddTel_Click(sender As Object, e As EventArgs) Handles btnAddTel.Click
@@ -53,6 +60,40 @@
 
         Dim logicaPersona As New logicaPersona
         logicaPersona.modificarPersona(newPersona)
+
+        tbxCedula.Enabled = True
+        tbxCedula.Text = ""
+        tbxDireccion.Text = ""
+        tbxName.Text = ""
+        tbxTel.Text = ""
+
+    End Sub
+
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
+        Dim cedula As Integer
+        cedula = tbxCedula.Text
+        Dim personaNueva As persona
+        Dim logica As New logicaPersona
+        personaNueva = logica.buscarPersona(cedula)
+
+        If IsNothing(personaNueva) Then
+            tbxTel.Enabled = True
+            tbxName.Enabled = True
+            tbxDireccion.Enabled = True
+        Else
+            tbxName.Text = personaNueva.NombreProp
+            tbxDireccion.Text = personaNueva.DireccionProp
+            tbxTel.Enabled = True
+            tbxName.Enabled = True
+            tbxDireccion.Enabled = True
+            tbxCedula.Enabled = False
+        End If
+    End Sub
+
+    Private Sub CrearPersonas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        tbxDireccion.Enabled = False
+        tbxName.Enabled = False
+        tbxTel.Enabled = False
 
     End Sub
 End Class
