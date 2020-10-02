@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Inicio
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Inicio
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inicio))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -29,7 +29,6 @@ Partial Class Inicio
         Me.AltaPersonaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltaMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificarPersonasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -46,7 +45,7 @@ Partial Class Inicio
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearPersonasToolStripMenuItem, Me.ModificarPersonasToolStripMenuItem, Me.MascotasToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearPersonasToolStripMenuItem, Me.MascotasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
@@ -63,7 +62,7 @@ Partial Class Inicio
         'AltaPersonaToolStripMenuItem
         '
         Me.AltaPersonaToolStripMenuItem.Name = "AltaPersonaToolStripMenuItem"
-        Me.AltaPersonaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AltaPersonaToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.AltaPersonaToolStripMenuItem.Text = "Alta persona"
         '
         'MascotasToolStripMenuItem
@@ -78,12 +77,6 @@ Partial Class Inicio
         Me.AltaMascotasToolStripMenuItem.Name = "AltaMascotasToolStripMenuItem"
         Me.AltaMascotasToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
         Me.AltaMascotasToolStripMenuItem.Text = "Alta mascotas"
-        '
-        'ModificarPersonasToolStripMenuItem
-        '
-        Me.ModificarPersonasToolStripMenuItem.Name = "ModificarPersonasToolStripMenuItem"
-        Me.ModificarPersonasToolStripMenuItem.Size = New System.Drawing.Size(120, 20)
-        Me.ModificarPersonasToolStripMenuItem.Text = "Modificar Personas"
         '
         'Inicio
         '
@@ -110,5 +103,4 @@ Partial Class Inicio
     Friend WithEvents AltaPersonaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MascotasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AltaMascotasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ModificarPersonasToolStripMenuItem As ToolStripMenuItem
 End Class
