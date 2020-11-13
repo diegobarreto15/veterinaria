@@ -94,6 +94,9 @@
         tbxDireccion.Enabled = False
         tbxName.Enabled = False
         tbxTel.Enabled = False
+    End Sub
 
+    Private Sub btnCancelarPersona_Click(sender As Object, e As EventArgs) Handles btnCancelarPersona.Click
+        'Esconder panel
     End Sub
 End Class

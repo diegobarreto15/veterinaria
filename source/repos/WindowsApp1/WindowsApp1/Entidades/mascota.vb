@@ -33,6 +33,19 @@
 
     End Property
 
+    Public Property id As Integer
+        Get
+            Return _id
+        End Get
+        Set(value As Integer)
+            _id = value
+        End Set
+
+    End Property
+
+
+
+
 
 
     Public Property Nombre As String

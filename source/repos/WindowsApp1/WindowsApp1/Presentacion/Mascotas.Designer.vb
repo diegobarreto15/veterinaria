@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Mascotas
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Mascotas
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnCrearMasc = New System.Windows.Forms.Button()
         Me.tbxAñoNac = New System.Windows.Forms.TextBox()
@@ -30,12 +30,12 @@ Partial Class Mascotas
         Me.Label1 = New System.Windows.Forms.Label()
         Me.tbxCIDueño = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnCrearMasc
         '
-        Me.btnCrearMasc.Location = New System.Drawing.Point(381, 168)
+        Me.btnCrearMasc.Location = New System.Drawing.Point(533, 280)
         Me.btnCrearMasc.Name = "btnCrearMasc"
         Me.btnCrearMasc.Size = New System.Drawing.Size(105, 23)
         Me.btnCrearMasc.TabIndex = 19
@@ -103,21 +103,21 @@ Partial Class Mascotas
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Cedula del dueño"
         '
-        'Label3
+        'Button1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(403, 250)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(83, 13)
-        Me.Label3.TabIndex = 22
-        Me.Label3.Text = "Datos mascotas"
+        Me.Button1.Location = New System.Drawing.Point(546, 55)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(105, 23)
+        Me.Button1.TabIndex = 22
+        Me.Button1.Text = "Buscar"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Mascotas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.tbxCIDueño)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnCrearMasc)
@@ -141,5 +141,5 @@ Partial Class Mascotas
     Friend WithEvents Label1 As Label
     Friend WithEvents tbxCIDueño As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents Button1 As Button
 End Class

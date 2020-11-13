@@ -11,6 +11,11 @@
     End Function
 
 
+    Public Function listadoPersonas()
+        Dim persistencia As New persistenciaPersona
+        Return persistencia.listadoPersonas()
+    End Function
+
     Public Sub modificarPersona(personaNueva As persona)
         Dim persistencia As New persistenciaPersona
         persistencia.modificarPersona(personaNueva)

@@ -54,8 +54,9 @@
 
 
     Public Function buscarPersona(ci As Integer) As persona
+        Dim newPersona As New persona
         Try
-            Dim newPersona As New persona
+
             Dim classConn As New conexionPostgre
             Dim cadenaDeComandos As String
 
@@ -75,7 +76,6 @@
                 newPersona.CedulaProp = Convert.ToInt32(reader(0).ToString)
                 newPersona.NombreProp = reader(1).ToString
                 newPersona.DireccionProp = reader(2).ToString
-
             End If
 
             If newPersona.NombreProp = "" And newPersona.DireccionProp = "" Then
@@ -89,10 +89,13 @@
         Finally
             conection.close
         End Try
+        Return newPersona
     End Function
 
-    Public Sub listadoPersonas()
+    Public Function listadoPersonas()
+        Dim listaPersona As New List(Of persona)
         Try
+
             Dim newPersona As New persona
             Dim classConn As New conexionPostgre
             Dim cadenaDeComandos As String
@@ -108,13 +111,22 @@
             reader = cmd.ExecuteReader
 
 
+            While reader.Read
+                newPersona.CedulaProp = Convert.ToInt32(reader(0).ToString)
+                newPersona.NombreProp = reader(1).ToString
+                newPersona.DireccionProp = reader(2).ToString
+
+                listaPersona.Add(newPersona)
+            End While
+
+
         Catch ex As Exception
             Throw ex
         Finally
             conection.close
         End Try
-
-    End Sub
+        Return listaPersona
+    End Function
 
     Public Sub modificarPersona(personaNueva As persona)
 

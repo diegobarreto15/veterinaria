@@ -36,7 +36,7 @@ Partial Class Inicio
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(197, 27)
+        Me.PictureBox1.Location = New System.Drawing.Point(230, 92)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(350, 254)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -62,7 +62,7 @@ Partial Class Inicio
         'AltaPersonaToolStripMenuItem
         '
         Me.AltaPersonaToolStripMenuItem.Name = "AltaPersonaToolStripMenuItem"
-        Me.AltaPersonaToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.AltaPersonaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AltaPersonaToolStripMenuItem.Text = "Alta persona"
         '
         'MascotasToolStripMenuItem
@@ -75,7 +75,7 @@ Partial Class Inicio
         'AltaMascotasToolStripMenuItem
         '
         Me.AltaMascotasToolStripMenuItem.Name = "AltaMascotasToolStripMenuItem"
-        Me.AltaMascotasToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.AltaMascotasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AltaMascotasToolStripMenuItem.Text = "Alta mascotas"
         '
         'Inicio

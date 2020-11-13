@@ -5,7 +5,7 @@
         Try
             conexion = New Npgsql.NpgsqlConnection()
             Dim cadenaDeConexion As String
-            cadenaDeConexion = "Server= 127.0.0.1;Port=5432;User Id='postgres';Password='root';database=dueño"
+            cadenaDeConexion = "Server= 127.0.0.1;Port=5432;User Id='postgres';Password='root';database=veterinaria"
             conexion.ConnectionString = cadenaDeConexion
             conexion.Open()
 
